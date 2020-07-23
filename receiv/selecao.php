@@ -23,7 +23,7 @@
 					unset($_SESSION['msg']);
 					}
 					?>
-			<table class="table table-striped">
+			<table class="table table-striped table-responsive-lg">
 				<thead>
 					<tr>
 						<th scope="col">ID</th>
