@@ -1,10 +1,12 @@
 
  function valida_campus(){
    let nome = document.getElementById("nome").value;
-   var email = document.getElementById("email").value;
    var cpf = document.getElementById("cpf").value;
-   var tel = document.getElementById("telefone").value;
-
+   var nascimento = document.getElementById("nascimento").value;
+   var endereco = document.getElementById("endereco").value;
+   var titulo = document.getElementById("titulo").value;
+   var valor = document.getElementById("valor").value;
+   var vencimento = document.getElementById("vencimento").value;
 
    if(nome == ""){
    Swal.fire(
@@ -18,33 +20,60 @@
      
    }
   
-   if(email == ""){
+   if(cpf == ""){
      Swal.fire(
        'Atenção',
-       'O campo e-mail não pode estar vazio...',
-       'error'
-     )
-     meu_form.email.focus();
-     return false;
-   }
-  
-   if(cpf==""){
-     Swal.fire(
-       'Atenção',
-       'O campo "CPF" não pode estar vazio...',
+       'O campo cpf não pode estar vazio...',
        'error'
      )
      meu_form.cpf.focus();
      return false;
    }
-   if(tel==""){
+  
+   if(nascimento==""){
      Swal.fire(
        'Atenção',
-       'O campo "Telefone" não pode estar vazio...',
+       'O campo "Nascimento" não pode estar vazio...',
        'error'
      )
-     meu_form.tel.focus();
+     meu_form.nascimento.focus();
      return false;
    }
+   if(endereco==""){
+     Swal.fire(
+       'Atenção',
+       'O campo "Endereço" não pode estar vazio...',
+       'error'
+     )
+     meu_form.endereco.focus();
+     return false;
+   }
+   if(titulo==""){
+    Swal.fire(
+      'Atenção',
+      'O campo "Título" não pode estar vazio...',
+      'error'
+    )
+    meu_form.titulo.focus();
+    return false;
+  }
+  if(valor==""){
+    Swal.fire(
+      'Atenção',
+      'O campo "Valor" não pode estar vazio...',
+      'error'
+    )
+    meu_form.valor.focus();
+    return false;
+  }
+  if(vencimento==""){
+    Swal.fire(
+      'Atenção',
+      'O campo "Vencimento" não pode estar vazio...',
+      'error'
+    )
+    meu_form.vencimento.focus();
+    return false;
+  }
 }
 
